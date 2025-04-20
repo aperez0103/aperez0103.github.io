@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Partner Lab #2</title>
+        <script src="programs.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav style="margin-top: 5px;">
+     
+            <a href="../index.html" style="border: 2px outset black; padding: 0px 5px 0px 5px;">Back to Portfolio</a>
+
+        </nav>
+        <h1>Hello <span id="nameOut" class="nameOut">User</span><span class="nameOut">!</span></h1>
+        <p id="aboutOut">Welcome to YOUR website! Feel free to change the background color and add your name below to make this page your own! Why don't you tell me about yourself? </p>
+        <br/>
+        <br/>
+        <div id="inputs">
+            <label for="nameIn">Name:</label>
+            <input type="text" id = "nameIn" name="nameIn" placeholder="Enter your name">
+            <br/>
+            <br/>
+            <label for="color">Background Color:</label>
+            <select name="color" id="color">
+                <option value="burlywood">Burlywood</option>
+                <option value="white">White</option>
+                <option value="antiquewhite">Antique White</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="aboutIn">About You:</label>
+            <input type="text" id="aboutIn" name="aboutIn" placeholder="Tell me about yourself!">
+            <br/>
+            <br/>
+            <input type="button" value="Update" onclick="updatePage()">    
+        </div>
+    </body>
+</html>

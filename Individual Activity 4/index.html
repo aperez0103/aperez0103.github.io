@@ -1,18 +1,115 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Under Construction</title>
+    <title>The Motorcyclist's Joy</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="programs.js"></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0>
   </head>
   <body>
-    <nav style="margin-top: 5px;">
-     
+    <div class="main">
+      <nav id="p_nav">
         <a href="../index.html" style="border: 2px outset black; padding: 0px 5px 0px 5px;">Back to Portfolio</a>
+      </nav>
+      <header>
+        <div class="container">
+          <h1>
+            The Motorcyclist's Joy
+          </h1> 
+          <nav class="local_nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="otr.html">On The Road</a></li>
+              <li><a href="gear.html">Gear</a></li>
+              <li><a href="byr.html">Begin Your Ride</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="container">
+        <h2 class="page_title">A Short History</h2>
+        <img src="steam_moto.png" alt="Steam Powered Motorcycle" class="moto_img">
+        <br/>
+        <p id="history">The motorcycle as we know it today is a sleek and speedy alternative to a traditional bicycle; the car's cool angsty cousin, trading in pedals for a clutch and throttle and a bell with a spedometer. But, that is not how they always used to be. Would you believe me if I told you the first motorcycle wasn't even gasoline powered, but steam?</p>
+        <p id="history">The first motorcycle was built by Sylvester Howard Roper in 1867: A steam powered bicycle that could reach speeds of 8 mph. It was a simple design, with a boiler mounted on the frame and a single cylinder engine driving the rear wheel. While not a commercial success, it laid the groundwork for future developments in the motorcycle industry.</p>
+        <p id="history">In 1885, Gottlieb Daimler and Wilhelm Maybach created the first gasoline powered motorcycle, the "Reitwagen". This vehicle was a significant advancement in motorcycle design, featuring a four-stroke engine. The Reitwagen was capable of reaching speeds of up to 10 mph, making it one of the fastest vehicles of its time.</p>
+        <p id="history">With the early 1900s came the rise of several motorcycle manufacturers, most notably Harley-Davidson and Indian. These manufacturues produced powerful and reliable motorcycles that quickly gained popularity amongst riders. The introduction of the V-twin engine in the early 1900s revolutionized the motorcycle design, providing  power and torque that its predecessor had been lacking.</p>
+        <br/>
+        <img src="cafe_racer.jpeg" alt="Cafe Racer Motorcycle" class="moto_img">
+        <br/>
+        <p id="history">The 1920s and 1930s saw the emergence of the "café racer" culture, with riders customizing their motorcycles for speed and style. This trend continued into the 1960s and 1970s, with the rise of Japanese manufacturers like Honda and Yamaha, who produced lightweight and powerful motorcycles that appealed to a new generation of riders.</p>
+        <br/>
+        <img src="moto.jpg" alt="Motorcycle" class="moto_img">
+        <br/>
+        <p id="history">Today, motorcycles come in a variety of styles and designs, from cruisers to sport bikes to touring bikes. They are used for everything from commuting to long-distance travel, and they continue to be a popular choice for riders around the world. The motorcycle has come a long way since its humble beginnings, and it remains a symbol of freedom and adventure.</p>
+        <p id="history">The motorcycle has a rich and fascinating history that has shaped its design and popularity over the years. From its steam-powered origins to its modern-day iterations, the motorcycle has evolved into a versatile and powerful vehicle that continues to capture the hearts of riders everywhere.</p>
+        
+      </div>
 
-    </nav>
-    <h1>Webpage Currently Under Construction</h1>
-    <p>Check back soon for updates!</p>
+      <div class="container my-5" id="contactus">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form id="contactForm" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+            <div class="invalid-feedback">Please enter your message.</div>
+          </div>
+          <button type="submit" class="btn btn-primary" onclick="contactForm(event)">Submit</button>
+        </form>
+        <p id="responseMessage" class="mt-3 text-success fw-bold" style="display: none;"></p>
+      </div>
+      <br/>
+      <div class="container">
+        <form>
+      <label for="theme">Choose a theme color:</label>
+      <select id="theme" name="theme" onchange="changeTheme(event)">
+        <option value="Default">Default</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="orange">Orange</option>
+        <option value="purple">Purple</option>
+        <option value="pink">Pink</option>
+        <option value="brown">Brown</option>
+      </select>
+      <br/>
+      <label for="font">Choose a font:</label>
+      <select id="font" name="font" onchange="changeFont(event)">
+        <option value="Default">Default</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Comic Sans MS">Comic Sans MS</option>
+        <option value="Impact">Impact</option>
+      </select>
+        </form>
+      </div>
+    </div>
+
+      
+      
+    <footer>
+      <div class="container">
+        <p>© 2025 The Motorcyclist's Joy. All rights reserved.</p>
+        <p><a href="mailto:axp5949@psu.edu">Email Us</a></p>
+        <p><a href="tel:0000000000">Call Us</a></p>
+      </div>
+    </footer>
   </body>
 

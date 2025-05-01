@@ -104,6 +104,9 @@ h2 {
 h2.page_title {
     font-size: 30px;
     margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
 }
 
 .moto_img {
